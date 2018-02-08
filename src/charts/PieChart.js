@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {PolarArea as PolarAreaChart} from 'react-chartjs';
+import {Pie as PieChart} from 'react-chartjs';
 
 
-export default class Polar extends Component {
+export default class Pie extends Component {
     constructor() {
         super() 
 
@@ -10,27 +10,27 @@ export default class Polar extends Component {
             data: [
                 {
                     value: 300,
-                    color:"#d44e58",
-                    highlight: "#FF5A5E",
-                    label: "Red"
-                },
-                {
-                    value: 50,
-                    color: "#268793",
-                    highlight: "#5AD3D1",
-                    label: "Teal"
-                },
-                {
-                    value: 100,
                     color: "#273996",
                     highlight: "#1555ea",
                     label: "blue"
                 },
                 {
-                    value: 40,
+                    value: 50,
                     color: "#949FB1",
                     highlight: "#A8B3C5",
                     label: "Grey"
+                },
+                {
+                    value: 100,
+                    color:"#d44e58",
+                    highlight: "#FF5A5E",
+                    label: "Red"
+                },
+                {
+                    value: 40,
+                    color: "#268793",
+                    highlight: "#5AD3D1",
+                    label: "Teal"
                 },
                 {
                     value: 120,
@@ -46,7 +46,7 @@ export default class Polar extends Component {
 
     render() {
         return (
-            <PolarAreaChart data={this.state.data}        width={600}
+            <PieChart data={this.state.data}        width={600}
                 height={400}
             />
         )

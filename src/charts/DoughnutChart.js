@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {PolarArea as PolarAreaChart} from 'react-chartjs';
+import {Doughnut as DoughnutChart} from 'react-chartjs';
 
 
-export default class Polar extends Component {
+export default class Doughnut extends Component {
     constructor() {
         super() 
 
@@ -46,7 +46,7 @@ export default class Polar extends Component {
 
     render() {
         return (
-            <PolarAreaChart data={this.state.data}        width={600}
+            <DoughnutChart data={this.state.data}        width={600}
                 height={400}
             />
         )
